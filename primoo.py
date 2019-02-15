@@ -1,8 +1,9 @@
-d,k=map(int,input().split())
-for i in range(d+1,k,1):
-	k+=1
-	if d%i==0:
-		break
-	else:
-		print(i)
+m,k=map(int,input().split())
+for i in range(m,k+1):
+	if i>1:
+		for j in range(2,i):
+			if i%j==0:
+				break
+			else:
+				print(i)
 	    
